@@ -1,5 +1,7 @@
 /*Works for Jenkins */
 node {
+    properties([parameters([string(defaultValue: '127.0.0.1', description: 'Please give IP to host WEBSITE', name: 'DEVIP', trim: true)])])
+    
     stage("Pull git"){
       git "git@github.com:sstanytska/website.git"
     }
