@@ -1,7 +1,7 @@
 /*Works for Jenkins */
 node {
     stage("Pull git"){
-      git "git@github.com:sstanytska/pipeline.git"
+      git "git@github.com:sstanytska/website.git"
     }
 
     stage("Install apache"){
